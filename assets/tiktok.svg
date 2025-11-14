@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bg" cx="30" cy="10" r="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#202020"/>
+      <stop offset="50%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </radialGradient>
+
+    <!-- Neon Cyan -->
+    <linearGradient id="cyan" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00eaff"/>
+      <stop offset="100%" stop-color="#00baff"/>
+    </linearGradient>
+
+    <!-- Neon Pink -->
+    <linearGradient id="pink" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff3ca5"/>
+      <stop offset="100%" stop-color="#ff6ec7"/>
+    </linearGradient>
+
+    <!-- White front layer -->
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f7f7f7"/>
+    </linearGradient>
+
+    <!-- Glow shadow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00eaff" flood-opacity="0.35" />
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ff3ca5" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="62" height="62" rx="16" fill="url(#bg)"/>
+
+  <!-- CYAN layer -->
+  <path fill="url(#cyan)" opacity="0.9" filter="url(#glow)"
+    d="M28.42,32.17c-.82-.13-1.67-.16-2.47-.02a4.74,4.74,0,0,0-3.7,5.39A4.85,4.85,0,0,0,27.4,41.7 4.8,4.8,0,0,0,31.9,37.1V14.25h5.7c.4,5 3.4,7.4,7.9,8v5.6c-3-.3-5.6-1.4-7.8-2.5v11.4c0,6.4-5.1,10.8-11.2,10A10,10,0,0,1,17.3,44C14.8,39.2,16.9,32.3,23.1,31a9.8,9.8,0,0,1,5.3.7Z"/>
+
+  <!-- PINK layer -->
+  <path fill="url(#pink)" opacity="0.9" filter="url(#glow)"
+    d="M30.42,33.1c-.82-.13-1.67-.16-2.47-.02a4.74,4.74,0,0,0-3.7,5.39A4.85,4.85,0,0,0,29.4,42.7 4.8,4.8,0,0,0,33.9,38.1V15.2h5.7c.4,4.9,3.2,7.3,7.9,7.9v5.5c-3-.3-5.6-1.4-7.8-2.5v10.5c0,6.4-5.1,10.8-11.2,10A10,10,0,0,1,19.3,45C16.8,40.2,18.9,33.3,25.1,32a9.8,9.8,0,0,1,5.3.7Z"/>
+
+  <!-- MAIN WHITE TIKTOK LOGO -->
+  <path fill="url(#white)" filter="url(#glow)"
+    d="M28.42,32.17a15.14,15.14,0,0,0-2.47.14,4.79,4.79,0,0,0-3.68,5.42,4.84,4.84,0,0,0,5.17,4.12A4.79,4.79,0,0,0,31.9,37.1c0-7.36,0-14.71,0-22.07v-.78h5.73c.36,4.87,3.22,7.35,7.9,8v5.61a13.76,13.76,0,0,1-7.81-2.55c0,.26,0,.45,0,.64,0,3.61,0,7.21,0,10.81A10.47,10.47,0,0,1,30.7,47a10,10,0,0,1-11.27-2.62,10,10,0,0,1-2.18-11.26,10.52,10.52,0,0,1,11-6.61l.21.05Z"/>
+</svg>
